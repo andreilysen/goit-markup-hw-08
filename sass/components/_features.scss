@@ -1,8 +1,13 @@
 /* features */
 
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title{
         position: absolute;
@@ -11,17 +16,27 @@
         height: 1px;
         margin: -1px;
     }
-    
+
     &__list{
-        display: flex;
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-wrap: nowrap;
+        }
+        
     }
-    
-    &__item:not(:last-child){
-        margin-right: 30px;
-    }
-    
+
     &__item {
-        width: 270px;
+        width: 100%;        
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;           
+        }        
     }
     
     &__icon{
@@ -34,14 +49,24 @@
         border-radius: 4px;    
     }
     
+    &__icon-size{
+        width: 70px;
+        height: 70px;
+    }
+
     &__item-title{
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.03em;        
         text-transform: uppercase;
         padding-bottom: 10px;    
-        color: $title-text-color;        
+        color: $title-text-color;
+
+        @media screen and (max-width: 767px) {
+            text-align: center; 
+        }
+               
     }
     
     &__item-text{
@@ -49,10 +74,5 @@
         line-height: 1.71;
         letter-spacing: 0.03em;    
         color: $main-text-color;
-    }
-    
-    &__icon-size{
-        width: 70px;
-        height: 70px;
-    }
+    }    
 }

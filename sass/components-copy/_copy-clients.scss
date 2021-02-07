@@ -1,0 +1,58 @@
+/*our clients*/
+
+.client{
+    padding: 94px 0;
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__item{       
+        width: 170px;
+        height: 90px;
+    }
+    
+    &__link{
+        border: 1px solid $color-icon;
+        color: $color-icon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color, border-color $animation-duration $animation-timing;
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+    
+    &__icon{
+        fill: currentColor;
+    }
+
+    &__link--ya-co{
+        padding: 20px 63px;
+    }
+    
+    &__link--tag-line{
+        padding: 19px 65px;
+    }
+    
+    &__link--company{
+        padding: 24px 65px;
+    }
+    
+    &__link--foster-peters{
+        padding: 24px 45px;
+    }
+    
+    &__link--brand{
+        padding: 22px 56px;
+    }
+    
+    &__link--teg-company{
+        padding: 22px 41px;
+    }
+}

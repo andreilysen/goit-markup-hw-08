@@ -21,10 +21,10 @@
                     </ul>
                 </nav>
                 <div class="header__contact">
-                    <ul class="header__list">
+                    <ul class="header__list header__list--tablet">
                         <li class="header__item-contact">
                             <a class="header__page header__page--contact" href="mailto:info@devstudio.com">
-                                <svg weight="16" height="12" class="header__icon">
+                                <svg class="header__icon-email">
                                     <use href="./img/symbol-defs.svg#icon-email"></use>
                                 </svg>
                                 info@devstudio.com
@@ -32,7 +32,7 @@
                         </li>
                         <li>
                             <a class="header__page header__page--contact" href="tel:+380961111111">
-                                <svg weight="10" height="16" class="header__icon">
+                                <svg class="header__icon-tell">
                                     <use href="./img/symbol-defs.svg#icon-tell"></use>
                                 </svg>
                                 +38 096 111 11 11
@@ -40,6 +40,11 @@
                         </li>
                     </ul>
                 </div>
+                <button class="header__button-menu">
+                    <svg width="24" height="16" class="header__button-icon">
+                        <use href="./img/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>   
         </header>
 
@@ -56,7 +61,7 @@
 
             <!--Особенности-->
             <section class="features">
-                <div class="container">
+                <div class="container features__container">
                     <h2 class="features__title">Особенности</h2>
                     <ul class="features__list">
                         <li class="features__item">
@@ -118,7 +123,7 @@
                         </li>
                         <li class="work__item">
                             <div class="work__list">
-                                <img class="work__img" src="./img/gadget2.jpg" alt="Планшет" width="370">
+                                <img class="work__img" src="./img/tablet.jpg" alt="Планшет" width="370">
                                 <h3 class="work__text">Дизайнерские решения</h3>
                             </div>
                         </li>
@@ -132,7 +137,12 @@
                     <h2 class="title">Наша команда</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <img src="./img/Product-Designer.jpg" alt="Игорь Демьяненко" width="270">
+                            <picture>
+                                <source srcset="./img/mobile/Product-Designer@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/tablet/Product-Designer.jpg 1x, ./img/tablet/Product-Designer@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/desk/Product-Designer.jpg 1x, ./img/desk/Product-Designer@2x.jpg 2x" media="(min-width: 1200px)">
+                                <img src="./img/mobile/Product-Designer.jpg" alt="Игорь Демьяненко">
+                            </picture>
                             <h3 class="team__item-title">Игорь Демьяненко</h3>
                             <p class="team__item-text">Product Designer</p>
                             <ul class="social">
@@ -167,7 +177,12 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img src="./img/Developer.jpg" alt="Ольга Репина" width="270">
+                            <picture>
+                                <source srcset="./img/mobile/Developer@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/tablet/Developer.jpg 1x, ./img/tablet/Developer@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/desk/Developer.jpg 1x, ./img/desk/Developer@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./img/mobile/Developer.jpg" alt="Ольга Репина">
+                            </picture>                            
                             <h3 class="team__item-title">Ольга Репина</h3>
                             <p class="team__item-text">Frontend Developer</p>
                             <ul class="social">
@@ -202,7 +217,12 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img src="./img/marketing.jpg" alt="Николай Тарасов" width="270">
+                            <picture>
+                                <source srcset="./img/mobile/marketing@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/tablet/marketing.jpg 1x, ./img/tablet/marketing@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/desk/marketing.jpg 1x, ./img/desk/marketing@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./img/mobile/marketing.jpg" alt="Николай Тарасов">
+                            </picture>                            
                             <h3 class="team__item-title">Николай Тарасов</h3>
                             <p class="team__item-text">Marketing</p>
                             <ul class="social">
@@ -237,7 +257,12 @@
                             </ul>
                         </li>
                         <li class="team__item">
-                            <img src="./img/UI-designer.jpg" alt="Михаил Ермаков" width="270">
+                            <picture>
+                                <source srcset="./img/mobile/UI-designer@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/tablet/UI-designer.jpg 1x, ./img/tablet/UI-designer@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/desk/UI-designer.jpg 1x, ./img/desk/UI-designer@2x.jpg 2x" media="(min-width: 1200px)">
+                                    <img src="./img/mobile/UI-designer.jpg" alt="Михаил Ермаков">
+                            </picture>                            
                             <h3 class="team__item-title">Михаил Ермаков</h3>
                             <p class="team__item-text">UI Designer</p>
                             <ul class="social">

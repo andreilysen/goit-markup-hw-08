@@ -3,19 +3,46 @@
     &__container {
         display: flex;
         align-items: center;
-        padding-top: 24px;
-        padding-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @media screen and (min-width: $tablet) {
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+        }
     }
 
-    &__nav,
-    &__list {
+    &__nav {
     display: flex;
     align-items: center;
     }
 
-    &__portfolio {
-        border-bottom: 1px solid #ECECEC;
-    } 
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__list--tablet{
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            display: flex;
+        }
+    }
 
     &__item:not(:last-child) {
         margin-right: 50px;
@@ -23,24 +50,35 @@
 
     &__contact {
         margin-left: auto;
+        
     }
     
     &__item-contact{
-        margin-right: 30px;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
     }
     
     &__page {
         position: relative;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        
         transition: color $animation-duration $animation-timing;
     
         color: $title-text-color;
-    
+
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 1.14;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
     
     &__page:hover,
@@ -69,14 +107,64 @@
         display: flex;
         align-items: center;
         padding: 0;
+        
     
         color: $main-text-color;
     }
     
-    &__icon{
-        width: 16px;
-        margin-right: 10px;
+    &__icon-email{
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
         
-        fill: currentColor
-    }    
+        fill: currentColor;
+
+        @media screen and (min-width: $desktop) {
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;        
+        }
+    }
+
+    &__icon-tell{
+        width: 10px;
+        height: 14px;
+        margin-right: 8px;
+        
+        fill: currentColor;
+
+        @media screen and (min-width: $desktop) {
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+        }
+    }
+
+    &__button-menu{
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin-left: auto;
+        cursor: pointer;
+        color: $title-text-color;
+
+        @media screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &__button-menu:hover,
+    &__button-menu:focus{
+        color: $accent-color;
+    }
+    
+    &__button-icon{
+        fill: currentColor;
+    }
+
+    &__portfolio {
+        border-bottom: 1px solid #ECECEC;
+    } 
 }

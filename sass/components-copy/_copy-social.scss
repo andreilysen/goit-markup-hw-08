@@ -1,0 +1,40 @@
+/* social networks */
+
+.social{
+    display: flex;
+    padding: 16px 32px 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item{
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    &__link{
+        padding: 12px;
+        border-radius: 50px;
+        color: $color-icon;
+        transition: color, background-color $animation-duration $animation-timing;
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        color: $main-white-color;
+        background-color: $accent-color;
+        
+    }
+    
+    &__footer-link{
+        color: $main-white-color;
+    }
+    
+    &__img{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }   
+}
