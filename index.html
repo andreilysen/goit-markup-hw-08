@@ -138,9 +138,9 @@
                     <ul class="team__list">
                         <li class="team__item">
                             <picture>
-                                <source srcset="./img/mobile/Product-Designer@2x.jpg 2x" media="(max-width: 450px)">
-                                <source srcset="./img/tablet/Product-Designer.jpg 1x, ./img/tablet/Product-Designer@2x.jpg 2x" media="(min-width: 768px)">
                                 <source srcset="./img/desk/Product-Designer.jpg 1x, ./img/desk/Product-Designer@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/tablet/Product-Designer.jpg 1x, ./img/tablet/Product-Designer@2x.jpg 2x" media="(min-width: 768px)">
+                                <source srcset="./img/mobile/Product-Designer@2x.jpg 2x" media="(max-width: 450px)">                                
                                 <img src="./img/mobile/Product-Designer.jpg" alt="Игорь Демьяненко">
                             </picture>
                             <h3 class="team__item-title">Игорь Демьяненко</h3>
@@ -178,9 +178,9 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./img/mobile/Developer@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/desk/Developer.jpg 1x, ./img/desk/Developer@2x.jpg 2x" media="(min-width: 1200px)">                                
                                 <source srcset="./img/tablet/Developer.jpg 1x, ./img/tablet/Developer@2x.jpg 2x" media="(min-width: 768px)">
-                                <source srcset="./img/desk/Developer.jpg 1x, ./img/desk/Developer@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/mobile/Developer@2x.jpg 2x" media="(max-width: 450px)">
                                     <img src="./img/mobile/Developer.jpg" alt="Ольга Репина">
                             </picture>                            
                             <h3 class="team__item-title">Ольга Репина</h3>
@@ -218,9 +218,9 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./img/mobile/marketing@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/desk/marketing.jpg 1x, ./img/desk/marketing@2x.jpg 2x" media="(min-width: 1200px)">                                
                                 <source srcset="./img/tablet/marketing.jpg 1x, ./img/tablet/marketing@2x.jpg 2x" media="(min-width: 768px)">
-                                <source srcset="./img/desk/marketing.jpg 1x, ./img/desk/marketing@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/mobile/marketing@2x.jpg 2x" media="(max-width: 450px)">
                                     <img src="./img/mobile/marketing.jpg" alt="Николай Тарасов">
                             </picture>                            
                             <h3 class="team__item-title">Николай Тарасов</h3>
@@ -258,9 +258,9 @@
                         </li>
                         <li class="team__item">
                             <picture>
-                                <source srcset="./img/mobile/UI-designer@2x.jpg 2x" media="(max-width: 450px)">
+                                <source srcset="./img/desk/UI-designer.jpg 1x, ./img/desk/UI-designer@2x.jpg 2x" media="(min-width: 1200px)">                                
                                 <source srcset="./img/tablet/UI-designer.jpg 1x, ./img/tablet/UI-designer@2x.jpg 2x" media="(min-width: 768px)">
-                                <source srcset="./img/desk/UI-designer.jpg 1x, ./img/desk/UI-designer@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./img/mobile/UI-designer@2x.jpg 2x" media="(max-width: 450px)">
                                     <img src="./img/mobile/UI-designer.jpg" alt="Михаил Ермаков">
                             </picture>                            
                             <h3 class="team__item-title">Михаил Ермаков</h3>
@@ -362,53 +362,57 @@
 
         <footer class="footer">
             <div class="container footer__container">
-                <div>
-                    <a class="logo logo__footer-logo" href="" lang="en">
-                        <span class="logo__text">Web</span>Studio
-                    </a>
-                    <address class="footer__address">
-                        <p class="footer__address-office">г. Киев, пр-т Леси Украинки, 26</p>
-                        <p class="footer__address-contact"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-                        <p class="footer__address-contact"><a href="tel:+380961111111">+38 096 111 11 11</a></p>
-                    </address>
-                </div>
-                <div class="footer__social">
-                    <h3 class="footer__title">присоединяйтесь</h3>
-                    <ul>
-                        <li class="social__item">
-                            <a class="social__link social__footer-link" href="">
-                                <svg class="social__img">
-                                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__footer-link" href="">
-                                <svg class="social__img">
-                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__footer-link" href="">
-                                <svg class="social__img">
-                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__footer-link" href="">
-                                <svg class="social__img">
-                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer__tablet">
+                    <div class="footer__contact">
+                        <a class="logo logo__footer-logo" href="" lang="en">
+                            <span class="logo__text">Web</span>Studio
+                        </a>
+                        <address class="footer__address">
+                            <p class="footer__address-office">г. Киев, пр-т Леси Украинки, 26</p>
+                            <p class="footer__address-contact"><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+                            <p class="footer__address-contact"><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+                        </address>
+                    </div>
+                    <div class="footer__social">
+                        <h3 class="footer__title">присоединяйтесь</h3>
+                        <ul>
+                            <li class="social__item">
+                                <a class="social__link social__footer-link" href="">
+                                    <svg class="social__img">
+                                        <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__footer-link" href="">
+                                    <svg class="social__img">
+                                        <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__footer-link" href="">
+                                    <svg class="social__img">
+                                        <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__footer-link" href="">
+                                    <svg class="social__img">
+                                        <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__sub" >
                     <h3 class="footer__title" >Подпишитесь на рассылку</h3>
-                    <form action="">
-                        <input type="email" name="email" placeholder="E-mail" class="footer__input" >
+                    <div class="footer__form">
+                        <form action="">
+                            <input type="email" name="email" placeholder="E-mail" class="footer__input" >
+                        </form>
                         <button type="submit" class="footer__button" >
                             <div class="footer__button-send">
                                 <span >Подписаться</span> 
@@ -416,8 +420,8 @@
                                     <use href="./img/symbol-defs.svg#icon-send"></use>
                                 </svg>
                             </div>                           
-                    </button>
-                    </form>                            
+                        </button>
+                    </div>                           
                 </div>
             </div>
         </footer>

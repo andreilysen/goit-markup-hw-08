@@ -23,10 +23,6 @@
             flex-wrap: wrap;
             margin: -15px;
         }
-
-        @media screen and (min-width: $desktop) {
-            flex-wrap: nowrap;
-        }
         
     }
 
@@ -36,7 +32,11 @@
         @media screen and (min-width: $tablet) {
             width: calc((100% - 2 * 30px) / 2);
             margin: 15px;           
-        }        
+        }
+        
+        @media screen and (min-width: $desktop) {
+            width: calc((100% - 4 * 30px) / 4);          
+        }
     }
     
     &__icon{

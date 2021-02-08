@@ -5,6 +5,32 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__list {
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }            
+    }
+
+    &__item {
+        width: 100%;        
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;           
+        }
+        
+        @media screen and (min-width: $desktop) {
+            width: calc((100% - 4 * 30px) / 4);          
+        }
+    }
+
     &__item {
         background-color: $main-white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -12,7 +38,10 @@
     }
 
     &__item:not(:last-child){
-        margin-bottom: 30px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+       
     }
 
     &__item-title{
