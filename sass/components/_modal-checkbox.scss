@@ -10,20 +10,29 @@
     }
 
     &__text{
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         color: $main-text-color;
+
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__link{
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.03em;
         margin-left: 3px;
         color: $accent-color;
         text-decoration-line: underline;
         text-decoration-skip-ink: none;
+        @media screen and (min-width: $desktop) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     & label::before{
@@ -33,11 +42,15 @@
         width: 16px;
         height: 15px;
         top: 50%;
-        left: 10px;
+        left: 1px;
         transform: translateY(-50%);
         border: 1px solid $title-text-color;
         border-radius: 2px;
         transition: background-color $animation-duration $animation-timing;
+
+        @media screen and (min-width: $desktop) {
+            left: 10px;
+        }
     }
 
     & input[type="checkbox"]:hover + label::before,
