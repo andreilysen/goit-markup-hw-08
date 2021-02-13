@@ -1,0 +1,64 @@
+.client{
+    padding: 60px 0;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15;
+    }
+
+    &__item{
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+        @media screen and (min-width: 768px){
+            width: calc((100% - 3 * 30px) / 3);
+        }
+        @media screen and (min-width: 1200px){
+            width: calc((100% - 6 * 30px) / 6);
+        }
+    }
+
+    &__link{
+        border: 1px solid $color-icon;
+        color: $color-icon;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color, border-color $animation-duration $animation-timing;
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+    
+    &__icon{
+        fill: currentColor;
+    }
+
+    &__link--ya-co{
+        padding: 20px 63px;
+    }
+    
+    &__link--tag-line{
+        padding: 19px 65px;
+    }
+    
+    &__link--company{
+        padding: 24px 65px;
+    }
+    
+    &__link--foster-peters{
+        padding: 24px 45px;
+    }
+    
+    &__link--brand{
+        padding: 22px 56px;
+    }
+    
+    &__link--teg-company{
+        padding: 22px 41px;
+    }
+}
+
