@@ -25,7 +25,7 @@
             margin: 15px;
         }
 
-        @media screen and (min-width: 1$desktop){
+        @media screen and (min-width: $desktop){
             width: calc((100% - 4 * 30px) / 4);
         }
     }
