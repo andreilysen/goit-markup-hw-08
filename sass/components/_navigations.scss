@@ -1,0 +1,230 @@
+.header {
+    position: relative;
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ECECEC;
+        @media screen and (min-width: $tablet){
+            padding-top: 21px;
+            padding-bottom: 21px; 
+        }
+    }
+
+    &__nav{
+        @media screen and (max-width: 767px){
+            margin-left: auto;
+        }
+        
+    }
+
+    &__list{
+        @media screen and (min-width: $desktop){
+            display: flex;
+        }
+    }
+
+    &__menu{  
+        display: flex;
+        justify-content: center;     
+        background-color: $main-white-color;
+        @media screen and (max-width: 767px){
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 48px 83px 48px 40px;
+        }
+    }
+
+    &__is-open{
+        @media screen and (max-width: 767px){
+            display: block;
+        }
+        
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+        @media screen and (min-width: $tablet){
+            margin-right: 50px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__item{
+        @media screen and (min-width: $tablet){
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__list-menu{
+        display: flex;
+
+        @media screen and (max-width: 767px){
+            display: block;
+            margin-bottom: 302px;
+        }
+        
+    }
+
+    &__page {
+        /*position: relative;*/
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;       
+    
+        color: $title-text-color;
+        transition: color $animation-duration $animation-timing;
+        @media screen and (min-width: $tablet){            
+            font-size: 14px;
+            line-height: 1.14px;            
+        }  
+    }
+    
+    &__page:hover,
+    &__page:focus {
+        color: $accent-color;        
+    }
+    
+    &__page--active{
+        color: $accent-color;
+    }
+
+    
+
+    &__list-contact{
+        @media screen and (min-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__page-tell{
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;       
+
+        color:$accent-color;
+    }
+
+    &__page-email{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color: $main-text-color;
+    }
+
+    &__list-item{
+        margin-bottom: 32px;
+    }
+
+    &__social{
+        display: flex;
+        margin-top: 64px;
+        @media screen and (min-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__social-link{
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid $accent-color;
+    }
+
+    &__social-text{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+
+        letter-spacing: 0.02em;
+
+        color: $accent-color;
+    }
+
+    &__contact{
+        margin-left: auto;
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+
+        @media screen and (min-width: $desktop){
+            display: flex;
+            align-items: center;           
+        }
+       
+    }
+
+    &__page-contact{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
+        color:$title-text-color;
+        transition: color $animation-duration $animation-timing;
+    }
+
+    &__page-contact:hover,
+    &__page-contact:focus {
+        color: $accent-color;        
+    }
+    &__item-contact{
+        margin-bottom: 10px;
+
+        @media screen and (min-width: $desktop){
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }    
+
+    &__page--contact {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        @media screen and (min-width: $tablet){
+            color: $main-text-color;
+        }      
+    }
+    
+    &__icon{
+        width: 16px;
+        margin-right: 10px;
+        
+        fill: currentColor
+    }  
+
+    &__button{
+        position: relative;
+        display: inline-flex;
+        padding: 12px 8px;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+        z-index: 1;
+        @media screen and (min-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__button-close{
+        display: none;
+    }
+
+    &__is-open &__button-close{
+        display: block;
+    }
+
+    &__is-open &__button-menu{
+        display: none;
+    }
+}
