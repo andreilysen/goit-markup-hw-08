@@ -143,6 +143,9 @@
     }
 
     &__container{
-        display: flex;
+        @media screen and (min-width: $desktop){
+           display: flex; 
+        }
+        
     }
 }  

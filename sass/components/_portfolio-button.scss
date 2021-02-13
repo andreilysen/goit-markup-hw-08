@@ -1,20 +1,19 @@
-/*portfolio button*/
-
 .project {
-    padding-top: 100px;
-    padding-bottom: 94px;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
-   
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet){
+        justify-content: center;
+    }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
-    }     
-    
     &__button{
         font-weight: 500;
         font-size: 16px;
@@ -29,7 +28,17 @@
         transition: color, background-color, box-shadow $animation-duration $animation-timing;
         color:$title-text-color;
     }
-    
+
+    &__item:not(:last-child){
+        margin-right: 8px;
+    }
+
+    &__item:first-child{
+        @media screen and (max-width: 767px){
+            margin-bottom: 15px;
+        }     
+    }
+
     &__button:hover,
     &__button:focus{
         background-color: $accent-color;
@@ -42,3 +51,7 @@
         background-color: $accent-color
     }
 }
+
+
+    
+   
