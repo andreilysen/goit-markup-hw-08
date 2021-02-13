@@ -28,8 +28,13 @@
         color: $accent-color;
     }
 
-   /* &__footer-logo{
+    &__footer-logo{
         color: $main-white-color;
         margin: 0;
-    }*/
+        display: flex;
+        @media screen and (max-width: 1199px){
+            justify-content: center;
+        }
+        
+    }
 }
