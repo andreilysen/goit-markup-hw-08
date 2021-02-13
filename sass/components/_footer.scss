@@ -44,10 +44,10 @@
             text-align: center;
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: $tablet){
             margin-top: 10px;
         }
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             margin-left: 70px;
         }
     }
@@ -67,7 +67,7 @@
             padding-top: 60px;
             text-align: center;
         }
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             padding-top: 10px;
             margin-left: auto;
         }
@@ -86,7 +86,7 @@
         border-radius: 4px;
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 20px;
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             width: 358px;
         }
     }
@@ -99,7 +99,7 @@
         border-radius: 4px;
         cursor: pointer;
         padding: 10px 28px;
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             margin-left: 12px;
         }
         
@@ -122,12 +122,12 @@
         margin-left: 10px;
     }
     &__info-container{
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: $tablet){
             display: flex;
             justify-content: space-around;
             padding: 0 76px;  
         }
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             justify-content: start;
             padding: 0;
         }
