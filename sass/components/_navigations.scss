@@ -1,5 +1,5 @@
 .header {
-    position: relative;
+    /*position: relative;*/
     &__container {
         display: flex;
         align-items: center;
@@ -72,7 +72,7 @@
     }
 
     &__page {
-        /*position: relative;*/
+        position: relative;
         font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
@@ -93,6 +93,20 @@
     
     &__page--active{
         color: $accent-color;
+    }
+
+    @media screen and (min-width: 768px){
+        &__page--active::after{
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            bottom: -0.5px;
+        
+            background-color: $accent-color;
+        }
     }
 
     
