@@ -1,0 +1,75 @@
+.features {
+    padding-top:60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__title{
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    &__list{
+        @media screen and (min-width: $tablet){
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: $tablet){
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+        }
+        @media screen and (min-width: $desktop){
+            width: calc((100% - 4 * 30px) / 4);
+        }
+    }
+
+    &__item:not(:last-child){
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: $background-icon;
+        margin-bottom: 30px;
+        border-radius: 4px;    
+    }
+
+    &__icon-size{
+        width: 70px;
+        height: 70px;
+    }
+
+    &__item-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;        
+        text-transform: uppercase;
+        padding-bottom: 10px;    
+        color: $title-text-color; 
+        @media screen and (max-width: 767px){
+            text-align: center;
+        }       
+    }
+    
+    &__item-text{
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;    
+        color: $main-text-color;
+    }
+}
