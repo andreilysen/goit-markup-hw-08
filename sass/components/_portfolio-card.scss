@@ -4,8 +4,12 @@
     @media screen and (min-width: $tablet){
         margin: -15px;
     }
-    
-   
+
+    &__item:not(:last-child){
+        @media screen and (max-width: $tablet){
+            margin-bottom: 30px;
+        }
+    }  
 
     &__item{
         z-index: -1;
