@@ -1187,6 +1187,12 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .card__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .card__item {
   z-index: -1;
 }
